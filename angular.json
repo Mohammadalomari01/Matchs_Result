@@ -54,15 +54,11 @@
               "src/assets/js/jquery.sticky.js",
               "src/assets/js/jquery.mb.YTPlayer.min.js",
               "src/assets/js/main.js"
+
             ]
           },
           "configurations": {
             "production": {
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -74,7 +70,8 @@
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
                 }
-              ]
+              ],
+              "outputHashing": "all"
             },
             "development": {
               "buildOptimizer": false,

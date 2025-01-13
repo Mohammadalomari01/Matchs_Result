@@ -12,7 +12,7 @@ export class HomeService {
 
   getLeagues(): Observable<any> {
     const user = 'mohammad5112001';
-    const token = 'e4bf3d58f735b7ebd1064b173fd7ddb4';
+    const token = '968d1c8dcc0da0f241e412cdcd3fa34b';
     const url = `${this.apiUrl}?user=${user}&token=${token}&t=list`;
     return this.http.get(url);
   }
